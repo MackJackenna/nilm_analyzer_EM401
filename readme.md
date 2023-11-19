@@ -1,77 +1,30 @@
-<!-- ![GitHub](https://img.shields.io/github/license/mahnoor-shahid/nilm_analyzer?style=for-the-badge) -->
-<!-- ![GitHub Repo stars](https://img.shields.io/github/stars/mahnoor-shahid/nilm_analyzer?style=for-the-badge) -->
-<!-- ![GitHub forks](https://img.shields.io/github/forks/mahnoor-shahid/nilm_analyzer?style=for-the-badge) -->
-<!-- ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/mahnoor-shahid/nilm_analyzer?include_prereleases&style=for-the-badge) -->
-<!-- ![GitHub issues](https://img.shields.io/github/issues-raw/mahnoor-shahid/nilm_analyzer?style=for-the-badge) -->
-<!-- ![GitHub pull requests](https://img.shields.io/github/issues-pr/mahnoor-shahid/nilm_analyzer?style=for-the-badge) -->
+# Read-me Simplified for easier access to dataset downloads.
 
-![GitHub](https://img.shields.io/github/license/mahnoor-shahid/nilm_analyzer)
-![GitHub Repo stars](https://img.shields.io/github/stars/mahnoor-shahid/nilm_analyzer)
-![GitHub forks](https://img.shields.io/github/forks/mahnoor-shahid/nilm_analyzer)
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/mahnoor-shahid/nilm_analyzer?include_prereleases)
-<a href="https://github.com/mahnoor-shahid/nilm_analyzer" alt="python">
-        <img src="https://img.shields.io/badge/python-v3.9-brightgreen" /></a>
-<a href="https://github.com/mahnoor-shahid/nilm_analyzer" alt="numpy">
-        <img src="https://img.shields.io/badge/numpy-1.20.3-yellowgreen" /></a>
-<a href="https://github.com/mahnoor-shahid/nilm_analyzer" alt="pandas">
-        <img src="https://img.shields.io/badge/pandas-1.2.4-yellowgreen" /></a>
-<a href="https://github.com/mahnoor-shahid/nilm_analyzer" alt="dask">
-        <img src="https://img.shields.io/badge/dask-2022.05.02-red" /></a>  <a href="https://github.com/mahnoor-shahid/nilm_analyzer" alt="scikit-learn">
-        <img src="https://img.shields.io/badge/scikit--learn-1.2.1-yellowgreen" /></a>
+## Link to Original Repository
+Extended read-me available for set-up:
+https://github.com/mahnoor-shahid/nilm_analyzer by Mahnoor Shahid
 
-<!-- ![GitHub issues](https://img.shields.io/github/issues-raw/mahnoor-shahid/nilm_analyzer) -->
-<!--![GitHub pull requests](https://img.shields.io/github/issues-pr/mahnoor-shahid/nilm_analyzer) -->
+## How to acces:
+> Clone the nilm_analyzer_EM401 repository. Download required dataset and unzip to required location.
 
-# nilm-analyzer: a simple python package for loading and processing nilm datasets
-> This project uses **Dask Dataframes** to ease and fasten the process of loading and analyzing all the data of any publicly available NILM dataset and provides basic transformations like resampling, standardization and extracting activations by thresholding for statistical analysis purpose. Can be used further for splitting datasets into train, validation and test subsets for Energy Disaggregation task. 
+## Downloads
+REFIT [United Kingdom]
+https://pureportal.strath.ac.uk/files/52873459/Processed_Data_CSV.7z
 
-## Getting Started
-1) Install the nilm_analyzer in your current environment.
-```
-pip install nilm-analyzer
-```
+UK-DALE [United Kingdom]
+http://data.ukedc.rl.ac.uk/simplebrowse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2017/UK-DALE-FULL-disaggregated/ukdale.zip
 
-2) [Download](#downloads) any NILM dataset(s) and import the corresponding loader. Then, pass the data path of the data directory where the dataset is located. For instance,
-```
-from nilm_datasets.loaders import REFIT_Loader
-refit = REFIT_Loader(data_path='data/refit/')
-```
-3) Fetch the list of available appliances for selected houses.
-```
-refit.get_appliance_names(house=2)
-```
-4) Load data for selected appliance (all houses)
-```
-kettle = refit.get_appliance_data(appliance='Kettle')
-```
-5) (OR) Load data for selected house (all appliances).
-```
-house2 = refit.get_house_data(house=2)
-```
-6) (OR) Load data for sselected appliance and elected houses.
-```
-kettle = refit.get_appliance_data(appliance="Kettle", houses=[1,2,3])
-```
-7) To access the data, use the below command.
-```
-kettle.data
-```
-8) Take the reference from NILM_Analyzer to see how Refit_Loader can be accessed and how it's utilities can be used.
+AMPds [Canada]
+https://dataverse.harvard.edu/api/access/datafile/2741425?format=original
 
-Reference Repository: <br />
-[NILM Analyzer Tutorials](https://github.com/mahnoor-shahid/nilm_analyzer_tutorials) = This repository serves more like a user guide that describes how to use the nilm analyzer package, and demonstrates all the basic functionalities that it provides.
+GeLaP [Germany]
+https://mygit.th-deg.de/tcg/gelap/-/tree/master
 
+DEDDIAG [Germany]
+https://figshare.com/articles/dataset/DEDDIAG_a_domestic_electricity_demand_dataset_of_individual_appliances_in_Germany/13615073
 
-## Dependencies
-Ensure that the following dependencies are satisfied in your current environment 
-```  
-  - python>=3.9.2
-  - numpy>=1.20.3
-  - pandas>=1.2.4
-  - dask>=2021.06.2
-  - scikit-learn>=1.1.2
-```
-
+iAWE [India]
+https://drive.google.com/open?id=1c4Q9iusYbwXkCppXTsak5oZZYHfXPmnp
 
 ## Datasets Included
 REFIT [United Kingdom] <br />
@@ -93,23 +46,6 @@ iAWE [India] <br />
 N. Batra, A. Singh, P. Singh, H. Dutta, V. Sarangan, M. Srivastava "Data Driven Energy Efficiency in Buildings"
 
 
-## Downloads
-REFIT [United Kingdom]
-https://pureportal.strath.ac.uk/files/52873459/Processed_Data_CSV.7z
 
-UK-DALE [United Kingdom]
-http://data.ukedc.rl.ac.uk/simplebrowse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2017/UK-DALE-FULL-disaggregated/ukdale.zip
-
-AMPds [Canada]
-https://dataverse.harvard.edu/api/access/datafile/2741425?format=original
-
-GeLaP [Germany]
-https://mygit.th-deg.de/tcg/gelap/-/tree/master
-
-DEDDIAG [Germany]
-https://figshare.com/articles/dataset/DEDDIAG_a_domestic_electricity_demand_dataset_of_individual_appliances_in_Germany/13615073
-
-iAWE [India]
-https://drive.google.com/open?id=1c4Q9iusYbwXkCppXTsak5oZZYHfXPmnp
 
 
