@@ -2,6 +2,10 @@ from nilm_analyzer.loaders import UKDALE_Loader
 import pandas as pd
 ukdale = UKDALE_Loader(data_path=r'E:\NILM\nilm_analyzer_EM401\UKDALE')
 
+
+print(ukdale.get_appliance_names(house =5))
+
+
 ##Takes specific appliance data for whatever combination of houses
 #a = ukdale.get_appliance_data(appliance="dishwasher", houses=[1])
 
