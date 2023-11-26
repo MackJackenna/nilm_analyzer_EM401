@@ -1,18 +1,19 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.cm as cm
+from matplotlib.pyplot import figure, show, rc
 
-plt.style.use('_mpl-gallery')
 
-# make data
-np.random.seed(1)
-x = 4 + np.random.normal(0, 1.5, 200)
+# force square figure and square axes looks better for polar, IMO
+fig = figure(figsize=(8,8))
+ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
 
-# plot:
-fig, ax = plt.subplots()
+N = 20
+theta = np.arange(0.0, 2*np.pi, 2*np.pi/N)
+radii = 10*np.random.rand(N)
+width = np.pi/4*np.random.rand(N)
+bars = ax.bar(theta, radii, width=width, bottom=0.0)
+for r,bar in zip(radii, bars):
+    bar.set_facecolor( cm.jet(r/10.))
+    bar.set_alpha(0.5)
 
-ax.hist(x, bins=8, linewidth=0.5, edgecolor="white")
-
-ax.set(xlim=(0, 8), xticks=np.arange(1, 8),
-       ylim=(0, 56), yticks=np.linspace(0, 56, 9))
-
-plt.show()
+show()
