@@ -15,8 +15,8 @@ time_segment = 'hour'  # 'hour', 'dayweek', 'daymonth
 freq_arr, times = pycircular.utils.freq_time(dates , time_segment=time_segment)
 dates_mean = times.values.mean()
 fig, ax1 = pycircular.plots.base_periodic_fig(freq_arr[:, 0], freq_arr[:, 1], time_segment=time_segment)
-plt.title('Time of use of a Dishwasher in UK-DALE House 5, Rounded to an Hour.')
+plt.title('Time of use of a Dishwasher in UK-DALE House 5, Rounded to an Hour.', fontsize=32)
 ax1.bar([dates_mean], [1], width=0.1, label='Arithmetical Mean Hour')
-ax1.legend(bbox_to_anchor=(-0.3, 0.05), loc="upper left", borderaxespad=0)
+ax1.legend(bbox_to_anchor=(-0.3, 0.05), loc="upper left", borderaxespad=0, fontsize=18)
 
 plt.show()
