@@ -8,7 +8,7 @@ refit = REFIT_Loader(data_path=r'C:\Users\44749\NILM\nilm_analyzer_EM401\refit')
 
 #a = kettle.data
 
-a = refit.get_house_data(house=12)
+a = refit.get_house_data(house=4)
 
 #kettle.data
 
