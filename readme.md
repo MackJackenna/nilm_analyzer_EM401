@@ -4,6 +4,8 @@
 Extended read-me available for set-up:
 https://github.com/mahnoor-shahid/nilm_analyzer by Mahnoor Shahid
 
+https://strath-my.sharepoint.com/:u:/g/personal/jack_mckenna_2019_uni_strath_ac_uk/ERUB_ktltxxNqkB6vRT2uGIBTotu9LVKjbb9_YTnA35pMA?e=2NvtDK
+
 ## How to acces:
 > Clone the nilm_analyzer_EM401 repository. Download required dataset and unzip to required location.
 
