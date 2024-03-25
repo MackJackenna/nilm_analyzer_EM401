@@ -3,7 +3,7 @@ import pandas as pd
 
 ukdale = UKDALE_Loader(data_path=r'C:\Users\44749\NILM\nilm_analyzer_EM401\UKDALE')
 
-print(ukdale.get_appliance_names(house =5))
+print(ukdale.get_appliance_names(house =4))
 
 
 
