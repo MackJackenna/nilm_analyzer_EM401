@@ -1,13 +1,27 @@
 # Final Year EME Project Repository
-> This project seeks to investigate domestic appliance use and its effect on the low voltage GB distribution network by visualisng and transforming NILM datasets. The following repository hosts files to visuaise raw NILM data, to predict reactive power measurements and synthesise load profiles, and an autoencoder implementation to infer time and duration of use patterns of wet appliances.
+> This project seeks to investigate domestic appliance use and its effect on the low voltage GB distribution network by visualisng and transforming NILM datasets. The following repository hosts files to visualise raw NILM data, predict reactive power measurements and synthesise load profiles, and an autoencoder implementation to infer time and duration of use patterns of wet appliances.
 
 ## Original Repository
-This repository was forked from Mahnoor Shahid's *nilm_analyzer* which hosted a useful package to visualise and process the UK-DALE and REFIT datasets.  Found here: https://github.com/mahnoor-shahid/nilm_analyzer
+This repository was forked from Mahnoor Shahid's *nilm_analyzer* which hosted a useful package to visualise and process the UK-DALE and REFIT datasets.  
+Found here: https://github.com/mahnoor-shahid/nilm_analyzer
 
-## How to acces:
+## How to access
+1) Install ***nilm-analyzer*** to your current environemnt.
+```
+pip install nilm-analyzer
+```
+2) Clone this repository to your desired location.
+```
+git clone https://github.com/MackJackenna/nilm_analyzer_EM401.git
+```
+3) Download necessary NILM datasets and files in the repository ReadMe.  
+  3.1) Unzip ***Processd_Data_CSV.7z*** as a folder titled ***refit*** into ***nilm_analyzer_EM401*** folder.  
+  3.2) Unzip ***ukdale.zip*** as a folder titled ***UKDALE*** into ***nilm_analyzer_EM401*** folder.  
+  3.3) Unzip ***Large Data.rar*** as a folder titled ***Large Data*** into ***nilm_analyzer_EM401*** folder.  
 
+4) The ***Working Files*** folder hosts relevant files relating to the project. Ensure file paths are consisent with your set-up before using.
 
-## Requried Downloads
+## Required Downloads
 These NILM datasets and some large processed files are requried for use with the project:  
 >- REFIT dataset - https://pureportal.strath.ac.uk/files/52873459/Processed_Data_CSV.7z  
 >- UKDALE dataset - http://data.ukedc.rl.ac.uk/simplebrowse/edc/efficiency/residential/EnergyConsumption/Domestic/UK-DALE-2017/UK-DALE-FULL-disaggregated/ukdale.zip  
