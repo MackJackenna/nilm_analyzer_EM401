@@ -6,7 +6,7 @@ This repository was forked from Mahnoor Shahid's *nilm_analyzer* which hosted a 
 Found here: https://github.com/mahnoor-shahid/nilm_analyzer
 
 ## How to access
-1) Install ***nilm-analyzer*** to your current environemnt.
+1) Install ***nilm-analyzer*** to your current environment.
 ```
 pip install nilm-analyzer
 ```
